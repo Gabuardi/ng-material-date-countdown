@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-material-date-countdown';
+  currentDate = new Date();
+  startDate = new Date().setMinutes(this.currentDate.getMinutes() - 1);
+  endDate = new Date().setMinutes(this.currentDate.getMinutes() + 1);
+
 }
